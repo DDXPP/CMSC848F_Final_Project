@@ -10,8 +10,11 @@ import itertools
 # TODO: skip empty tiles
 # TODO: remove background color 
 #-----------------------------------------------------------------
-# TODO: remove all images with N, W, etc. labels??????????????????????????????????????????????????????????????????????
+# TODO: images with N, W, etc. labels
 # TODO: manually process images with issues 
+# TODO: remove all images that only have 4 views 
+#-----------------------------------------------------------------
+# TODO: re-ordering 8 images for each vehicle 
 
 # python main.py --input_folder_path vehicles/narrowgauge --output_folder_path output/narrowgauge
 # python main.py --input_folder_path vehicles/narrowgauge --check_special_cases True
@@ -57,7 +60,8 @@ def remove_background(image):
     
     for x in range(d):
         for y in range (d):
-            if np.array_equal(image_arr[x, y], [231, 255, 255, 255]):
+            # if np.array_equal(image_arr[x, y], [231, 255, 255, 255]):
+            if image_arr[x, y][0] == 231 and image_arr[x, y][1] == 255 and image_arr[x, y][2] == 255:
                 image_arr[x, y] = [0, 0, 0, 0]
                 
     image_bg_removed = Image.fromarray(image_arr) 

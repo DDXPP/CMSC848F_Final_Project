@@ -1,0 +1,70 @@
+images that need manual processing:
+
+remove all images with N, W, etc. labels? 
+
+    road:
+        truck_container_2007_tgs
+        * truck_glass_1912_benz
+        * semi_glass_1990
+
+    tram:
+        Stadler_Tramlink
+
+    track:
+        * Car_1990_Billet
+        Car_Piece_Goods_1986_Hbbills_305
+        Car_Piece_Goods_1990_Hbillss_307
+        Car_Piece_Goods_2000_Hbbills_311
+        * Car_Piece_Goods_1960_Tbis_870
+        * Car_Piece_Goods_1975_Hbis_295
+        * Car_Coal_1979_Eaos_106
+        * Car_Coal_1987_Eanos_052
+        E91_8
+        Electric_1996_IC-T
+        * OBB_Desiro_ML
+
+        Car_Piece_Goods_2000_Hbbills_311
+        Car_Post_1891_PWIRP91
+        Car_Post_1902_Schnellzug_BadStB_02
+        Car_Post_1906_Schnellzug_BadStB_06
+        Car_Container_1981_Sgjkkmmss_699
+        CarTransportationCar_2
+        Diesel_2000_IC_TD
+        DR_E90_5
+        DR_E95
+        DR_V188
+        getreide_good
+        Getreidewagen2
+        holzwagen1
+        K4000-VRR
+        K4500-VRR
+        Kohlewagen2
+        Kohlewagen3
+        PTM_Containerwagen
+        PTM_Containerwagen02
+        Re420_PC
+        Re620_PC
+        rekowagen
+        stahlwagen
+        stahlwagen1
+        stahlwagen2
+        stahlwagen3
+        UIC-X_Post
+        Viehwagen2
+        
+
+    narrowgauge: 
+        Passenger_Train_2015_Komet 
+        Passenger_Train_2022_Zillertal 
+
+    maglev: 
+
+
+issues to report:
+- narrowgauge/Template has one pixel in "NW" that does not have RGB value of (231,255,255)
+    - Passenger_Train_2015_Komet 
+    - Passenger_Train_2022_Zillertal 
+
+- road/truck_container_2007_tgs has extra pixels 
+- only 4 views
+
