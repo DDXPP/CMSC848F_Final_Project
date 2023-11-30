@@ -1,2 +1,2 @@
-# CMSC848F_Final_Project
+# 3D Reconstruction for Retro and Classic Game Assets
  CMSC848F Final Project
